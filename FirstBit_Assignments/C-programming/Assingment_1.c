@@ -71,8 +71,12 @@
         printf("The character is Uppercase");
     }
 
-    int da, ta ,hra,basic;
 
+    // 7. Calculating total salary based on basic. If basic <=5000 da, ta and hra will be
+// 10%,20% and 25% respectively otherwise da, ta and hra will be 15%,25% and 30%
+// respectively.
+    int da, ta ,hra,basic;
+    basic =5000;
     if(basic<=5000){
          da = 10*basic/100;
         ta = 20*basic/100;
@@ -82,4 +86,6 @@
         ta = 25*basic/100;
         hra = 30*basic/100;
     }
+    int T_s = basic + da + ta + hra ;
+    printf("the total salary is %d" ,T_s);
  }
